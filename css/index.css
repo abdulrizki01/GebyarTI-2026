@@ -1,0 +1,146 @@
+:root {
+    color-scheme: light;
+    --page-bg: #f7f5fa;
+    --surface: #ffffff;
+    --surface-soft: #f0eafa;
+    --text-primary: #211a2b;
+    --text-muted: #716a7b;
+    --border: #e5deed;
+    --brand-violet: #7600f5;
+    --brand-magenta: #dc20e8;
+    --accent-blue: #3276d2;
+    --accent-mint: #168b78;
+    --shadow: 0 12px 32px rgb(42 24 61 / 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--page-bg);
+    color: var(--text-primary);
+}
+
+header {
+    padding: 24px clamp(20px, 5vw, 72px);
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-container {
+    display: grid;
+    flex: 0 0 auto;
+    grid-template-columns: 25px 25px;
+    grid-template-rows: 25px 25px;
+    gap: 4px;
+    transform: rotate(45deg);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.atas-abu { background-color: #8e8797; }
+.kanan-hijau { background-color: var(--brand-magenta); }
+.kiri-ungu { background-color: var(--brand-violet); }
+.bawah-putih { background-color: var(--surface-soft); }
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 38px;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.text-green {
+    color: var(--brand-violet);
+}
+
+.brand-subtitle {
+    margin: 5px 0 0 4px;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.labs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.lab-card {
+    --lab-accent: var(--brand-violet);
+    min-width: 0;
+    padding: 24px;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--lab-accent);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    color: var(--text-primary);
+}
+
+.lab-card:nth-child(4n + 2) { --lab-accent: var(--brand-magenta); }
+.lab-card:nth-child(4n + 3) { --lab-accent: var(--accent-blue); }
+.lab-card:nth-child(4n) { --lab-accent: var(--accent-mint); }
+
+.lab-card h2,
+.lab-card h3 {
+    margin: 0 0 8px;
+    color: var(--text-primary);
+}
+
+.lab-card p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.lab-card a {
+    color: var(--lab-accent);
+}
+
+@media (max-width: 640px) {
+    .brand-wrapper {
+        gap: 20px;
+    }
+
+    .brand-title {
+        font-size: 30px;
+    }
+
+    .brand-subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .labs-grid {
+        grid-template-columns: 1fr;
+    }
+}
