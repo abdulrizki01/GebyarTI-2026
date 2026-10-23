@@ -32,7 +32,11 @@ body {
 }
 
 header {
-    padding: 24px clamp(20px, 5vw, 72px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 14px clamp(20px, 5vw, 72px);
     background: var(--surface);
     border-bottom: 1px solid var(--border);
 }
@@ -46,9 +50,9 @@ header {
 .logo-container {
     display: grid;
     flex: 0 0 auto;
-    grid-template-columns: 25px 25px;
-    grid-template-rows: 25px 25px;
-    gap: 4px;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 20px 20px;
+    gap: 3px;
     transform: rotate(45deg);
 }
 
@@ -71,7 +75,7 @@ header {
 .brand-title {
     margin: 0;
     color: var(--text-primary);
-    font-size: 38px;
+    font-size: 32px;
     line-height: 1.1;
     letter-spacing: 0;
 }
@@ -81,11 +85,52 @@ header {
 }
 
 .brand-subtitle {
-    margin: 5px 0 0 4px;
+    margin: 3px 0 0 4px;
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 2.5vw, 36px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 160ms ease;
+}
+
+nav li:hover {
+    color: var(--brand-violet);
+}
+
+.btn-uji-lab {
+    flex: 0 0 auto;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: var(--brand-violet);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.btn-uji-lab:hover {
+    background: var(--brand-magenta);
+    transform: translateY(-1px);
 }
 
 .labs-grid {
@@ -126,17 +171,52 @@ header {
     color: var(--lab-accent);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-block: 12px;
+    }
+
     .brand-wrapper {
         gap: 20px;
     }
 
+    nav {
+        order: 3;
+        flex: 1 0 100%;
+        overflow-x: auto;
+        padding: 4px 0;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        gap: 18px;
+        width: max-content;
+        min-width: 100%;
+    }
+
+    nav li {
+        font-size: 13px;
+    }
+
+    .btn-uji-lab {
+        margin-left: auto;
+        padding: 10px 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .btn-uji-lab {
+        font-size: 12px;
+    }
+
     .brand-title {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .brand-subtitle {
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 2px;
     }
 
