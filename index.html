@@ -1,187 +1,431 @@
 <!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teknik Informatika UIKA — Gebyar IT 2026</title>
-  <meta name="description" content="Eksplorasi 4 peminatan Teknik Informatika UIKA Bogor: CSN, Software Engineering, GIT, dan KERIS." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/index.css" />
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="#beranda">
-      <img src="img/TI_nobg.png" alt="Logo TI" />
-      <span><strong>Teknik Informatika</strong><small>UNIVERSITAS IBN KHALDUN BOGOR</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">☰</button>
-    <nav id="nav">
-      <a href="#prodi">Profil</a>
-      <a href="#lab">Laboratorium</a>
-      <a href="#karier">Karier</a>
-      <a href="#kontak">Kontak</a>
-      <a class="btn-outline" href="#lab">Jelajahi prodi ↗</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teknik Informatika UIKA — Gebyar IT 2026</title>
+    <meta
+      name="description"
+      content="Eksplorasi 4 peminatan Teknik Informatika UIKA Bogor: CSN, Software Engineering, GIT, dan KERIS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda">
+        <img src="img/TI_nobg.png" alt="Logo TI" />
+        <span
+          ><strong>Teknik Informatika</strong
+          ><small>UNIVERSITAS IBN KHALDUN BOGOR</small></span
+        >
+      </a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        ☰
+      </button>
+      <nav id="nav">
+        <a href="#prodi">Profil</a>
+        <a href="#lab">Laboratorium</a>
+        <a href="#karier">Karier</a>
+        <a href="#kontak">Kontak</a>
+        <a class="btn-outline" href="#lab">Jelajahi prodi ↗</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="beranda">
-      <div class="hero-text">
-        <p class="eyebrow">FAKULTAS TEKNIK DAN SAINS / GEBYAR IT 2026</p>
-        <h1>Merancang teknologi. Membuka potensi.</h1>
-        <p class="lead">Dari sistem komputasi hingga kecerdasan buatan. Temukan ruang belajar, meneliti, dan membangun solusi di Teknik Informatika UIKA.</p>
-        <div class="cta-row">
-          <a class="btn" href="#lab">Kenali 4 laboratorium</a>
-          <a class="link" href="#prodi">Tentang program studi ›</a>
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-text">
+          <p class="eyebrow">FAKULTAS TEKNIK DAN SAINS / GEBYAR IT 2026</p>
+          <h1>Merancang teknologi. Membuka potensi.</h1>
+          <p class="lead">
+            Dari sistem komputasi hingga kecerdasan buatan. Temukan ruang
+            belajar, meneliti, dan membangun solusi di Teknik Informatika UIKA.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#lab">Kenali 4 laboratorium</a>
+            <a class="link" href="#prodi">Tentang program studi ›</a>
+          </div>
+        </div>
+        <div class="hero-3d">
+          <model-viewer
+            src="img/TI_3D_FIX.glb"
+            alt="Logo 3D Teknik Informatika"
+            auto-rotate
+            auto-rotate-delay="0"
+            rotation-per-second="18deg"
+            camera-controls
+            disable-zoom
+            interaction-prompt="none"
+            shadow-intensity="0"
+            exposure="1.1"
+            loading="eager"
+          >
+            <div slot="poster" class="poster">Memuat model 3D…</div>
+          </model-viewer>
+          <span class="caption">TI / INTERAKTIF: SERET UNTUK MEMUTAR</span>
+        </div>
+      </section>
+
+      <div class="lab-strip">
+        <a href="pages/csn.html"
+          ><b>CSN ↗</b><small>Sistem &amp; jaringan</small></a
+        >
+        <a href="pages/se.html"
+          ><b>Software Engineering ↗</b
+          ><small>Rekayasa perangkat lunak</small></a
+        >
+        <a href="pages/git.html"
+          ><b>GIT ↗</b><small>Teknologi geospasial</small></a
+        >
+        <a href="pages/keris.html"
+          ><b>KERIS ↗</b><small>Pengetahuan &amp; AI</small></a
+        >
+      </div>
+
+      <section class="section split" id="prodi">
+        <div class="meta mono">
+          01 / HENDING INFORMATIKA<br /><br />Program Studi Teknik
+          Informatika<br />Fakultas Teknik dan Sains<br />Universitas Ibn
+          Khaldun Bogor
+        </div>
+        <div>
+          <h2>
+            Satu disiplin ilmu. Beragam cara memahami dan membangun masa depan.
+          </h2>
+          <p class="muted">
+            Informatika mempertemukan logika, rekayasa, dan kreativitas. Melalui
+            empat laboratorium keahlian, mahasiswa dapat mendalami sistem dan
+            jaringan, perangkat lunak, informasi geospasial, serta rekayasa
+            pengetahuan dan sistem cerdas.
+          </p>
+          <ul class="tags mono">
+            <li>Basis kompetensi</li>
+            <li>Eksplorasi identitas</li>
+            <li>Riset &amp; pengabdian</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section alt" id="lab">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow mono">02 / LABORATORIUM KEAHLIAN</p>
+            <h2>Empat ruang eksplorasi. Satu ekosistem informatika.</h2>
+          </div>
+          <p class="muted">
+            Temukan bidang yang menggerakkan rasa ingin tahumu. Setiap
+            laboratorium membuka pendekatan, keterampilan, dan arah riset yang
+            berbeda.
+          </p>
+        </div>
+        <div class="labs-grid">
+          <article class="lab-card" style="--c: #6c4de6">
+            <div class="lab-top">
+              <svg
+                class="lab-icon"
+                viewBox="0 0 56 56"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M28 5 6 20 14 46 42 46 50 20Z" />
+                <path
+                  d="M28 28 6 20M28 28 42 46M28 28 50 20M28 28 28 5M28 28 14 46"
+                />
+                <rect x="25.5" y="2.5" width="5" height="5" fill="#fff" />
+                <rect x="3.5" y="17.5" width="5" height="5" fill="#fff" />
+                <rect x="11.5" y="43.5" width="5" height="5" fill="#fff" />
+                <rect x="39.5" y="43.5" width="5" height="5" fill="#fff" />
+                <rect x="47.5" y="17.5" width="5" height="5" fill="#fff" />
+                <rect x="25.5" y="25.5" width="5" height="5" fill="#fff" />
+              </svg>
+              <div class="lab-id"><b>CSN</b><small>LAB / 01</small></div>
+            </div>
+            <h3>Computer System<br />and Networking</h3>
+            <p class="tagline">
+              Menghubungkan sistem. Menguatkan infrastruktur.
+            </p>
+            <p class="desc">
+              Mendalami bagaimana komputer, perangkat, dan jaringan bekerja
+              sebagai fondasi ekosistem digital yang terhubung dan aman.
+            </p>
+            <div class="focus-block">
+              <p class="mono focus">FOKUS KEAHLIAN</p>
+              <p class="focus-list">
+                Arsitektur komputer · Jaringan · Cloud &amp; virtualisasi<br />Keamanan
+                informasi · IoT · Embedded systems · WSN
+              </p>
+              <p class="extra">
+                Pemrograman sistem, sistem operasi, dan jaringan komputer.
+              </p>
+            </div>
+            <div class="lab-foot">
+              <span class="mono">SYSTEMS / CONNECTIVITY</span
+              ><a href="pages/csn.html" aria-label="Buka laboratorium CSN">↗</a>
+            </div>
+          </article>
+          <article class="lab-card" style="--c: #c026d3">
+            <div class="lab-top">
+              <svg
+                class="lab-icon"
+                viewBox="0 0 56 56"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M17 12 4 28 17 44M39 12 52 28 39 44M33 8 23 48" />
+                <rect x="25" y="23" width="6" height="6" fill="#fff" />
+              </svg>
+              <div class="lab-id"><b>SE</b><small>LAB / 02</small></div>
+            </div>
+            <h3>Software<br />Engineering</h3>
+            <p class="tagline">Dari kebutuhan menjadi perangkat lunak.</p>
+            <p class="desc">
+              Membangun perangkat lunak dengan kaidah rekayasa, dari analisis
+              kebutuhan dan desain pengalaman hingga implementasi dan pengujian.
+            </p>
+            <div class="focus-block">
+              <p class="mono focus">FOKUS KEAHLIAN</p>
+              <p class="focus-list">
+                Web &amp; mobile engineering · Big data<br />Sistem pendukung
+                keputusan · Cloud · IoT
+              </p>
+              <p class="extra">
+                Web/mobile development, UI/UX, analisis kebutuhan, dan testing.
+              </p>
+            </div>
+            <div class="lab-foot">
+              <span class="mono">SOFTWARE / ENGINEERING</span
+              ><a href="pages/se.html" aria-label="Buka laboratorium SE">↗</a>
+            </div>
+          </article>
+          <article class="lab-card" style="--c: #0f766e">
+            <div class="lab-top">
+              <svg
+                class="lab-icon"
+                viewBox="0 0 56 56"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M28 6 50 17 28 28 6 17Z" />
+                <path d="M6 26 28 37 50 26M6 35 28 46 50 35" />
+                <path d="M28 12 38 17 28 22 18 17Z" />
+              </svg>
+              <div class="lab-id"><b>GIT</b><small>LAB / 03</small></div>
+            </div>
+            <h3>Geospatial<br />Information Technology</h3>
+            <p class="tagline">Membaca ruang. Memahami keterkaitan.</p>
+            <p class="desc">
+              Mengolah data lokasi menjadi informasi spasial untuk memahami
+              wilayah, memodelkan fenomena, dan mendukung pengambilan keputusan.
+            </p>
+            <div class="focus-block">
+              <p class="mono focus">FOKUS KEAHLIAN</p>
+              <p class="focus-list">
+                GIS desktop/web/mobile · Survei GPS &amp; drone<br />Geodatabase
+                · Pemodelan &amp; keputusan spasial
+              </p>
+              <p class="extra">
+                Google Earth Engine, penginderaan jauh, integrasi AI, dan
+                ekstraksi bangunan 3D.
+              </p>
+            </div>
+            <div class="lab-foot">
+              <span class="mono">SPATIAL / INTELLIGENCE</span
+              ><a href="pages/git.html" aria-label="Buka laboratorium GIT">↗</a>
+            </div>
+          </article>
+          <article class="lab-card" style="--c: #c2672d">
+            <div class="lab-top">
+              <svg
+                class="lab-icon"
+                viewBox="0 0 56 56"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 10H46M10 10 28 26M46 10 28 26M10 10 6 40M46 10 50 40M28 26 28 50M6 40 28 50 50 40"
+                />
+                <rect x="7.5" y="7.5" width="5" height="5" fill="#fff" />
+                <rect x="43.5" y="7.5" width="5" height="5" fill="#fff" />
+                <rect x="3.5" y="37.5" width="5" height="5" fill="#fff" />
+                <rect x="47.5" y="37.5" width="5" height="5" fill="#fff" />
+                <rect x="25.5" y="47.5" width="5" height="5" fill="#fff" />
+                <rect x="25.5" y="23.5" width="5" height="5" fill="#fff" />
+              </svg>
+              <div class="lab-id"><b>KERIS</b><small>LAB / 04</small></div>
+            </div>
+            <h3>Knowledge Engineering and<br />Reliable Intelligent Systems</h3>
+            <p class="tagline">Mengubah data menjadi pengetahuan.</p>
+            <p class="desc">
+              Mengeksplorasi rekayasa pengetahuan dan sistem cerdas yang andal
+              untuk mengekstraksi insight serta mengembangkan produk berbasis
+              AI.
+            </p>
+            <div class="focus-block">
+              <p class="mono focus">FOKUS KEAHLIAN</p>
+              <p class="focus-list">
+                Data mining &amp; machine learning · Ontologi<br />Knowledge
+                graph · Sistem pakar · Analitika data
+              </p>
+              <p class="extra">
+                Prediksi, klasifikasi, otomasi, serta produk pembelajaran AR/VR.
+              </p>
+            </div>
+            <div class="lab-foot">
+              <span class="mono">KNOWLEDGE / INTELLIGENCE</span
+              ><a href="pages/keris.html" aria-label="Buka laboratorium KERIS"
+                >↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <p class="eyebrow mono">03 / KOMBINASI RISET</p>
+        <h2>Ide besar tumbuh di antara disiplin.</h2>
+        <div class="trio">
+          <div>
+            <span class="mono">A / AREA EKSPLORASI</span>
+            <h3>Ekosistem smart campus</h3>
+            <p>
+              IoT, layanan web/mobile, dan AI untuk dukungan bagi lingkungan
+              kampus yang terhubung.
+            </p>
+          </div>
+          <div>
+            <span class="mono">B / AREA EKSPLORASI</span>
+            <h3>Kecerdasan geospasial</h3>
+            <p>
+              Analisis citra, klasifikasi spasial, dan cloud geospasial untuk
+              membaca pola serta kecenderungan wilayah.
+            </p>
+          </div>
+          <div>
+            <span class="mono">C / AREA EKSPLORASI</span>
+            <h3>Sistem digital terintegrasi</h3>
+            <p>
+              Integrasi cloud, jaringan, dan perangkat lunak untuk layanan
+              digital lintas perangkat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="karier">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow mono">04 / ARAH PROFESI</p>
+            <h2>Keahlian hari ini. Kemungkinan esok hari.</h2>
+          </div>
+          <p class="muted">
+            Bidang laboratorium membuka beragam arah pengembangan profesional.
+            Pilih jalur yang selaras dengan minat dan kompetensimu.
+          </p>
+        </div>
+        <div class="career">
+          <a style="--c: #7600f5" href="pages/csn.html"
+            ><b>CSN</b
+            ><span
+              >Computer networks engineer · Computer architecture engineer ·
+              Test engineer</span
+            ><i>↗</i></a
+          >
+          <a style="--c: #dc20e8" href="pages/se.html"
+            ><b>Software Engineering</b
+            ><span
+              >Web / fullstack / front-end developer · System analyst · Software
+              tester / QA · Database developer</span
+            ><i>↗</i></a
+          >
+          <a style="--c: #168b78" href="pages/git.html"
+            ><b>GIT</b
+            ><span
+              >Surveyor · Spesialis geospasial untuk konsultansi, pemerintahan,
+              perkebunan, dan pertambangan</span
+            ><i>↗</i></a
+          >
+          <a style="--c: #d9692b" href="pages/keris.html"
+            ><b>KERIS</b
+            ><span
+              >Data scientist / analyst · AI &amp; machine learning specialist ·
+              Knowledge engineer · Data quality engineer · BI analyst</span
+            ><i>↗</i></a
+          >
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <p class="eyebrow mono">
+            LANGKAH BERIKUTNYA / MULAI DARI RASA INGIN TAHU
+          </p>
+          <h2>Ke mana rasa ingin tahumu akan membawa?</h2>
+          <p>Kenali bidangnya. Temukan koneksinya. Mulai eksplorasimu.</p>
+        </div>
+        <div class="cta-btns">
+          <a class="btn-white" href="#lab">Jelajahi laboratorium ↗</a>
+          <a class="btn-line" href="#prodi">Kenali program studi ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="kontak">
+      <div class="foot-grid">
+        <div>
+          <a class="brand" href="#beranda"
+            ><img src="img/TI_nobg.png" alt="Logo TI" /><span
+              ><strong>Teknik Informatika</strong></span
+            ></a
+          >
+          <p class="small">
+            Fakultas Teknik dan Sains<br />Universitas Ibn Khaldun Bogor<br />Jl.
+            KH. Sholeh Iskandar, Bogor
+          </p>
+        </div>
+        <div>
+          <p class="mono">EKSPLORASI</p>
+          <a href="#prodi">Profil program studi</a
+          ><a href="#lab">Pembelajaran</a><a href="#karier">Arah profesi</a>
+        </div>
+        <div>
+          <p class="mono">LABORATORIUM KEAHLIAN</p>
+          <a href="pages/csn.html">Computer System and Networking</a
+          ><a href="pages/se.html">Software Engineering</a
+          ><a href="pages/git.html">Geospatial Information Technology</a
+          ><a href="pages/keris.html"
+            >Knowledge Engineering and Reliable Intelligent Systems</a
+          >
         </div>
       </div>
-      <div class="hero-3d">
-        <model-viewer src="img/TI_3D_FIX.glb" alt="Logo 3D Teknik Informatika"
-          auto-rotate auto-rotate-delay="0" rotation-per-second="18deg"
-          camera-controls disable-zoom interaction-prompt="none"
-          shadow-intensity="0" exposure="1.1" loading="eager">
-          <div slot="poster" class="poster">Memuat model 3D…</div>
-        </model-viewer>
-        <span class="caption">TI / INTERAKTIF: SERET UNTUK MEMUTAR</span>
+      <div class="foot-bottom mono">
+        <span>TEKNIK INFORMATIKA / GEBYAR IT 2026</span
+        ><a href="#beranda">KEMBALI KE ATAS ↑</a>
       </div>
-    </section>
-
-    <div class="lab-strip">
-      <a href="pages/csn.html"><b>CSN ↗</b><small>Sistem &amp; jaringan</small></a>
-      <a href="pages/se.html"><b>Software Engineering ↗</b><small>Rekayasa perangkat lunak</small></a>
-      <a href="pages/git.html"><b>GIT ↗</b><small>Teknologi geospasial</small></a>
-      <a href="pages/keris.html"><b>KERIS ↗</b><small>Pengetahuan &amp; AI</small></a>
-    </div>
-
-    <section class="section split" id="prodi">
-      <div class="meta mono">01 / HENDING INFORMATIKA<br /><br />Program Studi Teknik Informatika<br />Fakultas Teknik dan Sains<br />Universitas Ibn Khaldun Bogor</div>
-      <div>
-        <h2>Satu disiplin ilmu. Beragam cara memahami dan membangun masa depan.</h2>
-        <p class="muted">Informatika mempertemukan logika, rekayasa, dan kreativitas. Melalui empat laboratorium keahlian, mahasiswa dapat mendalami sistem dan jaringan, perangkat lunak, informasi geospasial, serta rekayasa pengetahuan dan sistem cerdas.</p>
-        <ul class="tags mono"><li>Basis kompetensi</li><li>Eksplorasi identitas</li><li>Riset &amp; pengabdian</li></ul>
-      </div>
-    </section>
-
-    <section class="section alt" id="lab">
-      <div class="section-head">
-        <div><p class="eyebrow mono">02 / LABORATORIUM KEAHLIAN</p>
-          <h2>Empat ruang eksplorasi. Satu ekosistem informatika.</h2></div>
-        <p class="muted">Temukan bidang yang menggerakkan rasa ingin tahumu. Setiap laboratorium membuka pendekatan, keterampilan, dan arah riset yang berbeda.</p>
-      </div>
-      <div class="labs-grid">
-        <article class="lab-card" style="--c:#6c4de6">
-          <div class="lab-top">
-            <svg class="lab-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M28 5 6 20 14 46 42 46 50 20Z"/><path d="M28 28 6 20M28 28 42 46M28 28 50 20M28 28 28 5M28 28 14 46"/><rect x="25.5" y="2.5" width="5" height="5" fill="#fff"/><rect x="3.5" y="17.5" width="5" height="5" fill="#fff"/><rect x="11.5" y="43.5" width="5" height="5" fill="#fff"/><rect x="39.5" y="43.5" width="5" height="5" fill="#fff"/><rect x="47.5" y="17.5" width="5" height="5" fill="#fff"/><rect x="25.5" y="25.5" width="5" height="5" fill="#fff"/></svg>
-            <div class="lab-id"><b>CSN</b><small>LAB / 01</small></div>
-          </div>
-          <h3>Computer System<br />and Networking</h3>
-          <p class="tagline">Menghubungkan sistem. Menguatkan infrastruktur.</p>
-          <p class="desc">Mendalami bagaimana komputer, perangkat, dan jaringan bekerja sebagai fondasi ekosistem digital yang terhubung dan aman.</p>
-          <div class="focus-block">
-            <p class="mono focus">FOKUS KEAHLIAN</p>
-            <p class="focus-list">Arsitektur komputer · Jaringan · Cloud &amp; virtualisasi<br />Keamanan informasi · IoT · Embedded systems · WSN</p>
-            <p class="extra">Pemrograman sistem, sistem operasi, dan jaringan komputer.</p>
-          </div>
-          <div class="lab-foot"><span class="mono">SYSTEMS / CONNECTIVITY</span><a href="pages/csn.html" aria-label="Buka laboratorium CSN">↗</a></div>
-        </article>
-        <article class="lab-card" style="--c:#c026d3">
-          <div class="lab-top">
-            <svg class="lab-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M17 12 4 28 17 44M39 12 52 28 39 44M33 8 23 48"/><rect x="25" y="23" width="6" height="6" fill="#fff"/></svg>
-            <div class="lab-id"><b>SE</b><small>LAB / 02</small></div>
-          </div>
-          <h3>Software<br />Engineering</h3>
-          <p class="tagline">Dari kebutuhan menjadi perangkat lunak.</p>
-          <p class="desc">Membangun perangkat lunak dengan kaidah rekayasa, dari analisis kebutuhan dan desain pengalaman hingga implementasi dan pengujian.</p>
-          <div class="focus-block">
-            <p class="mono focus">FOKUS KEAHLIAN</p>
-            <p class="focus-list">Web &amp; mobile engineering · Big data<br />Sistem pendukung keputusan · Cloud · IoT</p>
-            <p class="extra">Web/mobile development, UI/UX, analisis kebutuhan, dan testing.</p>
-          </div>
-          <div class="lab-foot"><span class="mono">SOFTWARE / ENGINEERING</span><a href="pages/se.html" aria-label="Buka laboratorium SE">↗</a></div>
-        </article>
-        <article class="lab-card" style="--c:#0f766e">
-          <div class="lab-top">
-            <svg class="lab-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M28 6 50 17 28 28 6 17Z"/><path d="M6 26 28 37 50 26M6 35 28 46 50 35"/><path d="M28 12 38 17 28 22 18 17Z"/></svg>
-            <div class="lab-id"><b>GIT</b><small>LAB / 03</small></div>
-          </div>
-          <h3>Geospatial<br />Information Technology</h3>
-          <p class="tagline">Membaca ruang. Memahami keterkaitan.</p>
-          <p class="desc">Mengolah data lokasi menjadi informasi spasial untuk memahami wilayah, memodelkan fenomena, dan mendukung pengambilan keputusan.</p>
-          <div class="focus-block">
-            <p class="mono focus">FOKUS KEAHLIAN</p>
-            <p class="focus-list">GIS desktop/web/mobile · Survei GPS &amp; drone<br />Geodatabase · Pemodelan &amp; keputusan spasial</p>
-            <p class="extra">Google Earth Engine, penginderaan jauh, integrasi AI, dan ekstraksi bangunan 3D.</p>
-          </div>
-          <div class="lab-foot"><span class="mono">SPATIAL / INTELLIGENCE</span><a href="pages/git.html" aria-label="Buka laboratorium GIT">↗</a></div>
-        </article>
-        <article class="lab-card" style="--c:#c2672d">
-          <div class="lab-top">
-            <svg class="lab-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 10H46M10 10 28 26M46 10 28 26M10 10 6 40M46 10 50 40M28 26 28 50M6 40 28 50 50 40"/><rect x="7.5" y="7.5" width="5" height="5" fill="#fff"/><rect x="43.5" y="7.5" width="5" height="5" fill="#fff"/><rect x="3.5" y="37.5" width="5" height="5" fill="#fff"/><rect x="47.5" y="37.5" width="5" height="5" fill="#fff"/><rect x="25.5" y="47.5" width="5" height="5" fill="#fff"/><rect x="25.5" y="23.5" width="5" height="5" fill="#fff"/></svg>
-            <div class="lab-id"><b>KERIS</b><small>LAB / 04</small></div>
-          </div>
-          <h3>Knowledge Engineering and<br />Reliable Intelligent Systems</h3>
-          <p class="tagline">Mengubah data menjadi pengetahuan.</p>
-          <p class="desc">Mengeksplorasi rekayasa pengetahuan dan sistem cerdas yang andal untuk mengekstraksi insight serta mengembangkan produk berbasis AI.</p>
-          <div class="focus-block">
-            <p class="mono focus">FOKUS KEAHLIAN</p>
-            <p class="focus-list">Data mining &amp; machine learning · Ontologi<br />Knowledge graph · Sistem pakar · Analitika data</p>
-            <p class="extra">Prediksi, klasifikasi, otomasi, serta produk pembelajaran AR/VR.</p>
-          </div>
-          <div class="lab-foot"><span class="mono">KNOWLEDGE / INTELLIGENCE</span><a href="pages/keris.html" aria-label="Buka laboratorium KERIS">↗</a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section dark">
-      <p class="eyebrow mono">03 / KOMBINASI RISET</p>
-      <h2>Ide besar tumbuh di antara disiplin.</h2>
-      <div class="trio">
-        <div><span class="mono">A / AREA EKSPLORASI</span><h3>Ekosistem smart campus</h3><p>IoT, layanan web/mobile, dan AI untuk dukungan bagi lingkungan kampus yang terhubung.</p></div>
-        <div><span class="mono">B / AREA EKSPLORASI</span><h3>Kecerdasan geospasial</h3><p>Analisis citra, klasifikasi spasial, dan cloud geospasial untuk membaca pola serta kecenderungan wilayah.</p></div>
-        <div><span class="mono">C / AREA EKSPLORASI</span><h3>Sistem digital terintegrasi</h3><p>Integrasi cloud, jaringan, dan perangkat lunak untuk layanan digital lintas perangkat.</p></div>
-      </div>
-    </section>
-
-    <section class="section" id="karier">
-      <div class="section-head">
-        <div><p class="eyebrow mono">04 / ARAH PROFESI</p>
-          <h2>Keahlian hari ini. Kemungkinan esok hari.</h2></div>
-        <p class="muted">Bidang laboratorium membuka beragam arah pengembangan profesional. Pilih jalur yang selaras dengan minat dan kompetensimu.</p>
-      </div>
-      <div class="career">
-        <a style="--c:#7600f5" href="pages/csn.html"><b>CSN</b><span>Computer networks engineer · Computer architecture engineer · Test engineer</span><i>↗</i></a>
-        <a style="--c:#dc20e8" href="pages/se.html"><b>Software Engineering</b><span>Web / fullstack / front-end developer · System analyst · Software tester / QA · Database developer</span><i>↗</i></a>
-        <a style="--c:#168b78" href="pages/git.html"><b>GIT</b><span>Surveyor · Spesialis geospasial untuk konsultansi, pemerintahan, perkebunan, dan pertambangan</span><i>↗</i></a>
-        <a style="--c:#d9692b" href="pages/keris.html"><b>KERIS</b><span>Data scientist / analyst · AI &amp; machine learning specialist · Knowledge engineer · Data quality engineer · BI analyst</span><i>↗</i></a>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div>
-        <p class="eyebrow mono">LANGKAH BERIKUTNYA / MULAI DARI RASA INGIN TAHU</p>
-        <h2>Ke mana rasa ingin tahumu akan membawa?</h2>
-        <p>Kenali bidangnya. Temukan koneksinya. Mulai eksplorasimu.</p>
-      </div>
-      <div class="cta-btns">
-        <a class="btn-white" href="#lab">Jelajahi laboratorium ↗</a>
-        <a class="btn-line" href="#prodi">Kenali program studi ↗</a>
-      </div>
-    </section>
-  </main>
-
-  <footer id="kontak">
-    <div class="foot-grid">
-      <div>
-        <a class="brand" href="#beranda"><img src="img/TI_nobg.png" alt="Logo TI" /><span><strong>Teknik Informatika</strong></span></a>
-        <p class="small">Fakultas Teknik dan Sains<br />Universitas Ibn Khaldun Bogor<br />Jl. KH. Sholeh Iskandar, Bogor</p>
-      </div>
-      <div><p class="mono">EKSPLORASI</p><a href="#prodi">Profil program studi</a><a href="#lab">Pembelajaran</a><a href="#karier">Arah profesi</a></div>
-      <div><p class="mono">LABORATORIUM KEAHLIAN</p><a href="pages/csn.html">Computer System and Networking</a><a href="pages/se.html">Software Engineering</a><a href="pages/git.html">Geospatial Information Technology</a><a href="pages/keris.html">Knowledge Engineering and Reliable Intelligent Systems</a></div>
-    </div>
-    <div class="foot-bottom mono"><span>TEKNIK INFORMATIKA / GEBYAR IT 2026</span><a href="#beranda">KEMBALI KE ATAS ↑</a></div>
-  </footer>
-  <script src="js/index.js"></script>
-</body>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>

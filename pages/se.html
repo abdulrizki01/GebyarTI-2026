@@ -1,128 +1,488 @@
 <!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>RISE CENTER — Lab Software Engineering UIKA Bogor</title>
-<meta name="description" content="RISE CENTER, laboratorium Software Engineering Teknik Informatika UIKA Bogor. Build your skill, build your product." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../css/se.css" />
-</head>
-<body>
-<header class="top" id="top">
-  <a class="brand" href="../index.html"><img src="../img/TI_nobg.png" alt="" onerror="this.remove()" /><span><b>Teknik Informatika</b><small>UNIVERSITAS IBN KHALDUN BOGOR</small></span></a>
-  <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
-  <nav id="nav"><a href="../index.html">Beranda</a><a href="../index.html#prodi">Profil</a><a class="on" href="../index.html#lab">Laboratorium</a><a href="#kontak">Kontak</a></nav>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RISE CENTER — Lab Software Engineering UIKA Bogor</title>
+    <meta
+      name="description"
+      content="RISE CENTER, laboratorium Software Engineering Teknik Informatika UIKA Bogor. Build your skill, build your product."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/se.css" />
+  </head>
+  <body>
+    <header class="top" id="top">
+      <a class="brand" href="../index.html"
+        ><img src="../img/TI_nobg.png" alt="" onerror="this.remove()" /><span
+          ><b>Teknik Informatika</b
+          ><small>UNIVERSITAS IBN KHALDUN BOGOR</small></span
+        ></a
+      >
+      <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav id="nav">
+        <a href="../index.html">Beranda</a
+        ><a href="../index.html#prodi">Profil</a
+        ><a class="on" href="../index.html#lab">Laboratorium</a
+        ><a href="#kontak">Kontak</a>
+      </nav>
+    </header>
 
-<section class="hero">
-  <div class="wrap hero-in">
-    <div class="hero-txt">
-      <p class="crumb"><a href="../index.html">Beranda</a> / <a href="../index.html#lab">Laboratorium</a> / RISE CENTER</p>
-      <p class="eyebrow light">LAB SOFTWARE ENGINEERING</p>
-      <h1>RISE CENTER</h1>
-      <p class="sub">- SOFTWARE ENGINEERING UIKA Bogor</p>
-      <p class="motto">BUILD YOUR SKILL, BUILD YOUR PRODUCT</p>
-      <h2>Berkarya di dalam &amp; di luar kampus.</h2>
-      <p class="lead">Ruang tumbuh untuk ide, teknologi, dan kolaborasi. Serius berkarya, tetap asik menjalaninya.</p>
-      <div class="btns"><a class="btn" href="#karya">Jelajahi karya kami ↗</a><a class="btn ghost" href="#tentang">Kenali lab ↗</a></div>
-    </div>
-    <div class="stage" id="se3d" aria-label="Logo 3D Software Engineering"><span class="msg">Memuat model 3D…</span></div>
-  </div>
-  <nav class="anchors wrap"><span>DI DALAM RISE</span>
-    <div><a href="#tentang">Tentang lab</a><a href="#skill">Skill &amp; karier</a><a href="#tim">Tim</a><a href="#prestasi">Prestasi</a><a href="#karya">Portfolio</a><a href="#hidup">Kehidupan lab</a></div></nav>
-</section>
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-txt">
+          <p class="crumb">
+            <a href="../index.html">Beranda</a> /
+            <a href="../index.html#lab">Laboratorium</a> / RISE CENTER
+          </p>
+          <p class="eyebrow light">LAB SOFTWARE ENGINEERING</p>
+          <h1>RISE CENTER</h1>
+          <p class="sub">- SOFTWARE ENGINEERING UIKA Bogor</p>
+          <p class="motto">BUILD YOUR SKILL, BUILD YOUR PRODUCT</p>
+          <h2>Berkarya di dalam &amp; di luar kampus.</h2>
+          <p class="lead">
+            Ruang tumbuh untuk ide, teknologi, dan kolaborasi. Serius berkarya,
+            tetap asik menjalaninya.
+          </p>
+          <div class="btns">
+            <a class="btn" href="#karya">Jelajahi karya kami ↗</a
+            ><a class="btn ghost" href="#tentang">Kenali lab ↗</a>
+          </div>
+        </div>
+        <div class="stage" id="se3d" aria-label="Logo 3D Software Engineering">
+          <span class="msg">Memuat model 3D…</span>
+        </div>
+      </div>
+      <nav class="anchors wrap">
+        <span>DI DALAM RISE</span>
+        <div>
+          <a href="#tentang">Tentang lab</a
+          ><a href="#skill">Skill &amp; karier</a><a href="#tim">Tim</a
+          ><a href="#prestasi">Prestasi</a><a href="#karya">Portfolio</a
+          ><a href="#hidup">Kehidupan lab</a>
+        </div>
+      </nav>
+    </section>
 
-<main>
-<section class="sec" id="tentang"><div class="wrap two">
-  <figure class="ph tall"><img src="../img/se/lab.jpg" alt="Suasana Lab SE" onerror="this.remove()" /><figcaption>Foto: ganti dengan dokumentasi lab</figcaption></figure>
-  <div>
-    <p class="eyebrow">RUANG IDE BERTUMBUH</p>
-    <h2 class="h">Bukan cuma ngoding. Ini tempat kita bertumbuh.</h2>
-    <p class="mut">RISE CENTER adalah lab Software Engineering UIKA Bogor. Tempat belajar membangun produk, bertukar perspektif, dan menemukan teman seperjalanan.</p>
-    <p class="mut">Di sini, kreativitas tidak berhenti di layar. Ada diskusi, kolaborasi, dan momen seru bersama. Bukan cuma full ngoding atau begadang.</p>
-    <p class="chips"><i>Kreatif</i><i>Kolaboratif</i><i>Asik &amp; suportif</i></p>
-  </div>
-</div></section>
+    <main>
+      <section class="sec" id="tentang">
+        <div class="wrap two">
+          <figure class="ph tall">
+            <img
+              src="../img/se/lab.jpg"
+              alt="Suasana Lab SE"
+              onerror="this.remove()"
+            />
+            <figcaption>Foto: ganti dengan dokumentasi lab</figcaption>
+          </figure>
+          <div>
+            <p class="eyebrow">RUANG IDE BERTUMBUH</p>
+            <h2 class="h">Bukan cuma ngoding. Ini tempat kita bertumbuh.</h2>
+            <p class="mut">
+              RISE CENTER adalah lab Software Engineering UIKA Bogor. Tempat
+              belajar membangun produk, bertukar perspektif, dan menemukan teman
+              seperjalanan.
+            </p>
+            <p class="mut">
+              Di sini, kreativitas tidak berhenti di layar. Ada diskusi,
+              kolaborasi, dan momen seru bersama. Bukan cuma full ngoding atau
+              begadang.
+            </p>
+            <p class="chips">
+              <i>Kreatif</i><i>Kolaboratif</i><i>Asik &amp; suportif</i>
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section class="sec alt" id="skill"><div class="wrap">
-  <div class="head"><div><p class="eyebrow">AKADEMIK &amp; KARIER</p><h2 class="h">Skill hari ini.<br /><em>Peluang esok hari.</em></h2></div><p class="mut">Dari fondasi engineering sampai eksplorasi teknologi baru. Bangun kemampuan yang bisa dibawa ke dunia nyata.</p></div>
-  <div class="cols2">
-    <article class="card"><h3><span class="ico">&lt;/&gt;</span>Skill Utama</h3><p class="mut s">Fondasi kuat untuk mengubah ide menjadi produk.</p>
-      <ol class="list"><li>Web/Mobile Dev</li><li>UI/UX</li><li>OOP</li><li>Teamwork</li><li>Analytical Thinking</li></ol></article>
-    <article class="card"><h3><span class="ico">◎</span>Riset &amp; Karier</h3><p class="mut s">Eksplorasi teknologi, buka jalur profesionalmu.</p>
-      <ol class="list"><li>Web/Mobile Eng</li><li>AR</li><li>Big Data</li><li>System Analyst</li><li>IT Consultant</li></ol></article>
-  </div>
-  <p class="note"><b>Mata kuliah ciri khas:</b> UI/UX · Augmented Reality · Pemrograman Web · Pemrograman Perangkat Bergerak · Rekayasa Perangkat Lunak · Teknologi Multimedia · Desain dan Analisis Algoritma</p>
-  <p class="note"><b>Topik riset:</b> Web Engineering · Mobile Engineering · Augmented Reality · Big Data · Decision Support · UI/UX</p>
-  <p class="note"><b>Prospek lulusan:</b> Web / Fullstack / Backend / Mobile Developer · Frontend &amp; UI/UX Designer · System Analyst · Software Tester · Database Developer · IT Consultant / Wirausahawan IT</p>
-</div></section>
+      <section class="sec alt" id="skill">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <p class="eyebrow">AKADEMIK &amp; KARIER</p>
+              <h2 class="h">
+                Skill hari ini.<br /><em>Peluang esok hari.</em>
+              </h2>
+            </div>
+            <p class="mut">
+              Dari fondasi engineering sampai eksplorasi teknologi baru. Bangun
+              kemampuan yang bisa dibawa ke dunia nyata.
+            </p>
+          </div>
+          <div class="cols2">
+            <article class="card">
+              <h3><span class="ico">&lt;/&gt;</span>Skill Utama</h3>
+              <p class="mut s">
+                Fondasi kuat untuk mengubah ide menjadi produk.
+              </p>
+              <ol class="list">
+                <li>Web/Mobile Dev</li>
+                <li>UI/UX</li>
+                <li>OOP</li>
+                <li>Teamwork</li>
+                <li>Analytical Thinking</li>
+              </ol>
+            </article>
+            <article class="card">
+              <h3><span class="ico">◎</span>Riset &amp; Karier</h3>
+              <p class="mut s">
+                Eksplorasi teknologi, buka jalur profesionalmu.
+              </p>
+              <ol class="list">
+                <li>Web/Mobile Eng</li>
+                <li>AR</li>
+                <li>Big Data</li>
+                <li>System Analyst</li>
+                <li>IT Consultant</li>
+              </ol>
+            </article>
+          </div>
+          <p class="note">
+            <b>Mata kuliah ciri khas:</b> UI/UX · Augmented Reality ·
+            Pemrograman Web · Pemrograman Perangkat Bergerak · Rekayasa
+            Perangkat Lunak · Teknologi Multimedia · Desain dan Analisis
+            Algoritma
+          </p>
+          <p class="note">
+            <b>Topik riset:</b> Web Engineering · Mobile Engineering · Augmented
+            Reality · Big Data · Decision Support · UI/UX
+          </p>
+          <p class="note">
+            <b>Prospek lulusan:</b> Web / Fullstack / Backend / Mobile Developer
+            · Frontend &amp; UI/UX Designer · System Analyst · Software Tester ·
+            Database Developer · IT Consultant / Wirausahawan IT
+          </p>
+        </div>
+      </section>
 
-<section class="sec" id="tim"><div class="wrap">
-  <div class="head"><div><p class="eyebrow">ORANG-ORANG DI BALIK RISE</p><h2 class="h">Tumbuh bersama pembimbing.</h2></div><p class="mut">Bertemu tim yang mendampingi eksplorasi, riset, dan perjalanan berkarya di lab.</p></div>
-  <div class="team">
-    <article><figure class="ph port"><img src="/img/BU_Berlin.jpg" alt="Berlina Wulandari" onerror="this.remove()" /></figure><small class="eyebrow">KEPALA LAB</small><h3>Berlina Wulandari, S.T., M.Kom.</h3><p>System Analyst</p></article>
-    <article><figure class="ph port"><img src="/img/Pak_safar.jpg" alt="Safaruddin Hidayat Al Ikhsan" onerror="this.remove()" /></figure><small class="eyebrow">DOSEN</small><h3>Safaruddin Hidayat Al Ikhsan, S.Kom., M.Kom.</h3><p>Mobile Programming</p></article>
-    <article><figure class="ph port"><img src="/img/Pak_Fitrah.jpg" alt="Fitrah Satrya Fajar Kusumah" onerror="this.remove()" /></figure><small class="eyebrow">DOSEN</small><h3>Fitrah Satrya Fajar Kusumah, S.Kom., M.Kom.</h3><p>System Analyst</p></article>
-    <article><figure class="ph port"><img src="/img/Pak_Hersanto.jpg" alt="Hersanto Fajri" onerror="this.remove()" /></figure><small class="eyebrow">DOSEN</small><h3>Hersanto Fajri, S.Ds., M.MD.</h3><p>Multimedia Design</p></article>
-    <article><figure class="ph port"><img src="/img/Bu_Freza.jpg" alt="Freza Riana" onerror="this.remove()" /></figure><small class="eyebrow">DOSEN</small><h3>Freza Riana, S.Si., M.Si.</h3><p>Math &amp; Statistic</p></article>
-  </div>
-</div></section>
+      <section class="sec" id="tim">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <p class="eyebrow">ORANG-ORANG DI BALIK RISE</p>
+              <h2 class="h">Tumbuh bersama pembimbing.</h2>
+            </div>
+            <p class="mut">
+              Bertemu tim yang mendampingi eksplorasi, riset, dan perjalanan
+              berkarya di lab.
+            </p>
+          </div>
+          <div class="team">
+            <article>
+              <figure class="ph port">
+                <img
+                  src="/img/BU_Berlin.jpg"
+                  alt="Berlina Wulandari"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <small class="eyebrow">KEPALA LAB</small>
+              <h3>Berlina Wulandari, S.T., M.Kom.</h3>
+              <p>System Analyst</p>
+            </article>
+            <article>
+              <figure class="ph port">
+                <img
+                  src="/img/Pak_safar.jpg"
+                  alt="Safaruddin Hidayat Al Ikhsan"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <small class="eyebrow">DOSEN</small>
+              <h3>Safaruddin Hidayat Al Ikhsan, S.Kom., M.Kom.</h3>
+              <p>Mobile Programming</p>
+            </article>
+            <article>
+              <figure class="ph port">
+                <img
+                  src="/img/Pak_Fitrah.jpg"
+                  alt="Fitrah Satrya Fajar Kusumah"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <small class="eyebrow">DOSEN</small>
+              <h3>Fitrah Satrya Fajar Kusumah, S.Kom., M.Kom.</h3>
+              <p>System Analyst</p>
+            </article>
+            <article>
+              <figure class="ph port">
+                <img
+                  src="/img/Pak_Hersanto.jpg"
+                  alt="Hersanto Fajri"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <small class="eyebrow">DOSEN</small>
+              <h3>Hersanto Fajri, S.Ds., M.MD.</h3>
+              <p>Multimedia Design</p>
+            </article>
+            <article>
+              <figure class="ph port">
+                <img
+                  src="/img/Bu_Freza.jpg"
+                  alt="Freza Riana"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <small class="eyebrow">DOSEN</small>
+              <h3>Freza Riana, S.Si., M.Si.</h3>
+              <p>Math &amp; Statistic</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="sec alt" id="prestasi"><div class="wrap">
-  <div class="head"><div><p class="eyebrow">JEJAK PRESTASI</p><h2 class="h">Bukan sekadar belajar.<br />Ada hasil yang dibawa pulang.</h2></div><p class="mut">Dari pencapaian akademik, kompetisi, dan beasiswa hingga pengalaman di dunia profesional.</p></div>
-  <div class="cols2">
-    <article class="card pr"><small class="eyebrow">AKADEMIK</small><h3>Tuntas, dengan kualitas.</h3><p>Lulusan terbaik Prodi TI (Wisuda 79–82)</p><p>Satu angkatan 2017 lulus tepat waktu, 4 tahun</p></article>
-    <article class="card pr"><small class="eyebrow">AWARD</small><h3>Funding Rp140 Juta</h3><p>Best Capstone Project Bangkit Academy by Google</p><p>Mahasiswa Teladan FTS UIKA 2024 · Beasiswa Bluebird</p></article>
-    <article class="card pr"><small class="eyebrow">JUARA</small><h3>Ide lokal. Panggung nasional.</h3><p>Juara 1–3 Lomba Inovasi Kab. Bogor 2020 · Juara 2 Lomba Web Gebyar IT</p><p>5 Besar BIOS Hackathon 2020 · 10 Besar EDSEN Hackathon 2022</p></article>
-    <article class="card pr"><small class="eyebrow">MAGANG</small><h3>Belajar langsung di industri.</h3><p>Kemendagri · Badan Pangan Nasional · BPS Kab. Bogor</p><p>Magang Merdeka: PT Talent Hub Digital Indonesia · PT Sebangku Jaya Abadi</p></article>
-  </div>
-</div></section>
+      <section class="sec alt" id="prestasi">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <p class="eyebrow">JEJAK PRESTASI</p>
+              <h2 class="h">
+                Bukan sekadar belajar.<br />Ada hasil yang dibawa pulang.
+              </h2>
+            </div>
+            <p class="mut">
+              Dari pencapaian akademik, kompetisi, dan beasiswa hingga
+              pengalaman di dunia profesional.
+            </p>
+          </div>
+          <div class="cols2">
+            <article class="card pr">
+              <small class="eyebrow">AKADEMIK</small>
+              <h3>Tuntas, dengan kualitas.</h3>
+              <p>Lulusan terbaik Prodi TI (Wisuda 79–82)</p>
+              <p>Satu angkatan 2017 lulus tepat waktu, 4 tahun</p>
+            </article>
+            <article class="card pr">
+              <small class="eyebrow">AWARD</small>
+              <h3>Funding Rp140 Juta</h3>
+              <p>Best Capstone Project Bangkit Academy by Google</p>
+              <p>Mahasiswa Teladan FTS UIKA 2024 · Beasiswa Bluebird</p>
+            </article>
+            <article class="card pr">
+              <small class="eyebrow">JUARA</small>
+              <h3>Ide lokal. Panggung nasional.</h3>
+              <p>
+                Juara 1–3 Lomba Inovasi Kab. Bogor 2020 · Juara 2 Lomba Web
+                Gebyar IT
+              </p>
+              <p>5 Besar BIOS Hackathon 2020 · 10 Besar EDSEN Hackathon 2022</p>
+            </article>
+            <article class="card pr">
+              <small class="eyebrow">MAGANG</small>
+              <h3>Belajar langsung di industri.</h3>
+              <p>Kemendagri · Badan Pangan Nasional · BPS Kab. Bogor</p>
+              <p>
+                Magang Merdeka: PT Talent Hub Digital Indonesia · PT Sebangku
+                Jaya Abadi
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="sec" id="karya"><div class="wrap">
-  <div class="head"><div><p class="eyebrow">DARI IDE JADI PRODUK</p><h2 class="h">Karya yang dekat<br />dengan kebutuhan nyata.</h2></div><p class="mut">Eksplorasi UI/UX, pengembangan web, dan aplikasi mobile untuk kampus maupun mitra di luar kampus.</p></div>
-  <div class="cols2">
-    <article class="work"><figure class="ph wide"><img src="../img/se/siak.jpg" alt="Mockup SIAK" onerror="this.remove()" /></figure><p class="chips"><i>Internal</i><i>Web / Mobile</i></p><h3>Ekosistem digital kampus.</h3><p class="mut">Layanan yang menyambungkan aktivitas akademik, administrasi, dan keseharian mahasiswa.</p>
-      <ul class="links"><li>App Mobile / Web Prodi</li><li>UCL Campus Life</li><li>E-Voting TIAS</li><li>SIAK UIKA</li><li>SIMPEG</li><li>Support PMB</li></ul></article>
-    <article class="work"><figure class="ph wide"><img src="../img/se/bps.jpg" alt="Sistem Informasi BPS" onerror="this.remove()" /></figure><p class="chips"><i>Eksternal</i><i>Sistem informasi</i></p><h3>Teknologi untuk layanan publik.</h3><p class="mut">Membawa pengalaman pengembangan sistem ke kebutuhan di luar kampus, melalui kolaborasi dan pemahaman konteks pengguna.</p>
-      <ul class="links"><li>Sistem Informasi BPS Kab. Bogor</li><li>Proyek bersama Korlantas POLRI (2022)</li><li>Proyek tingkat ASEAN</li></ul>
-      <div class="quote"><small class="eyebrow">DARI RISET KE IMPLEMENTASI</small><p>Pahami masalah. Rancang pengalaman. Bangun solusinya.</p></div></article>
-  </div>
-  <p class="foot">Mockup dan foto: ganti dengan tangkapan layar produk asli.</p>
-</div></section>
+      <section class="sec" id="karya">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <p class="eyebrow">DARI IDE JADI PRODUK</p>
+              <h2 class="h">Karya yang dekat<br />dengan kebutuhan nyata.</h2>
+            </div>
+            <p class="mut">
+              Eksplorasi UI/UX, pengembangan web, dan aplikasi mobile untuk
+              kampus maupun mitra di luar kampus.
+            </p>
+          </div>
+          <div class="cols2">
+            <article class="work">
+              <figure class="ph wide">
+                <img
+                  src="../img/se/siak.jpg"
+                  alt="Mockup SIAK"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <p class="chips"><i>Internal</i><i>Web / Mobile</i></p>
+              <h3>Ekosistem digital kampus.</h3>
+              <p class="mut">
+                Layanan yang menyambungkan aktivitas akademik, administrasi, dan
+                keseharian mahasiswa.
+              </p>
+              <ul class="links">
+                <li>App Mobile / Web Prodi</li>
+                <li>UCL Campus Life</li>
+                <li>E-Voting TIAS</li>
+                <li>SIAK UIKA</li>
+                <li>SIMPEG</li>
+                <li>Support PMB</li>
+              </ul>
+            </article>
+            <article class="work">
+              <figure class="ph wide">
+                <img
+                  src="../img/se/bps.jpg"
+                  alt="Sistem Informasi BPS"
+                  onerror="this.remove()"
+                />
+              </figure>
+              <p class="chips"><i>Eksternal</i><i>Sistem informasi</i></p>
+              <h3>Teknologi untuk layanan publik.</h3>
+              <p class="mut">
+                Membawa pengalaman pengembangan sistem ke kebutuhan di luar
+                kampus, melalui kolaborasi dan pemahaman konteks pengguna.
+              </p>
+              <ul class="links">
+                <li>Sistem Informasi BPS Kab. Bogor</li>
+                <li>Proyek bersama Korlantas POLRI (2022)</li>
+                <li>Proyek tingkat ASEAN</li>
+              </ul>
+              <div class="quote">
+                <small class="eyebrow">DARI RISET KE IMPLEMENTASI</small>
+                <p>Pahami masalah. Rancang pengalaman. Bangun solusinya.</p>
+              </div>
+            </article>
+          </div>
+          <p class="foot">
+            Mockup dan foto: ganti dengan tangkapan layar produk asli.
+          </p>
+        </div>
+      </section>
 
-<section class="sec alt" id="hidup"><div class="wrap">
-  <div class="head"><div><p class="eyebrow">KEHIDUPAN DI RISE</p><h2 class="h">Di balik layar,<br />banyak cerita.</h2></div><p class="mut">Proyek mempertemukan kita. Proses belajar dan momen bersama membuatnya jadi lebih berarti.</p></div>
-  <div class="gal">
-    <figure><span class="ph"><img src="../img/se/g1.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">PROYEK KOLABORASI</small><figcaption>Diskusi proyek ASEAN</figcaption></figure>
-    <figure><span class="ph"><img src="../img/se/g2.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">PROYEK KOLABORASI</small><figcaption>Kolaborasi dengan Korlantas POLRI</figcaption></figure>
-    <figure><span class="ph"><img src="../img/se/g3.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">PROYEK KOLABORASI</small><figcaption>Ngantor bareng alumni</figcaption></figure>
-    <figure><span class="ph"><img src="../img/se/g4.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">BELAJAR</small><figcaption>Lembur bareng menyusun proposal PKM</figcaption></figure>
-    <figure><span class="ph"><img src="../img/se/g5.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">SOSIAL</small><figcaption>Ngaliwet, bukber, dan makrab. Lab juga tentang rasa kebersamaan.</figcaption></figure>
-    <figure><span class="ph"><img src="../img/se/g6.jpg" alt="" onerror="this.remove()" /></span><small class="eyebrow">SELEBRASI</small><figcaption>Ritual habis seminar dan sidang. Satu bab selesai, cerita baru dimulai.</figcaption></figure>
-  </div>
-</div></section>
+      <section class="sec alt" id="hidup">
+        <div class="wrap">
+          <div class="head">
+            <div>
+              <p class="eyebrow">KEHIDUPAN DI RISE</p>
+              <h2 class="h">Di balik layar,<br />banyak cerita.</h2>
+            </div>
+            <p class="mut">
+              Proyek mempertemukan kita. Proses belajar dan momen bersama
+              membuatnya jadi lebih berarti.
+            </p>
+          </div>
+          <div class="gal">
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g1.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">PROYEK KOLABORASI</small>
+              <figcaption>Diskusi proyek ASEAN</figcaption>
+            </figure>
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g2.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">PROYEK KOLABORASI</small>
+              <figcaption>Kolaborasi dengan Korlantas POLRI</figcaption>
+            </figure>
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g3.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">PROYEK KOLABORASI</small>
+              <figcaption>Ngantor bareng alumni</figcaption>
+            </figure>
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g4.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">BELAJAR</small>
+              <figcaption>Lembur bareng menyusun proposal PKM</figcaption>
+            </figure>
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g5.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">SOSIAL</small>
+              <figcaption>
+                Ngaliwet, bukber, dan makrab. Lab juga tentang rasa kebersamaan.
+              </figcaption>
+            </figure>
+            <figure>
+              <span class="ph"
+                ><img
+                  src="../img/se/g6.jpg"
+                  alt=""
+                  onerror="this.remove()" /></span
+              ><small class="eyebrow">SELEBRASI</small>
+              <figcaption>
+                Ritual habis seminar dan sidang. Satu bab selesai, cerita baru
+                dimulai.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
-<section class="cta"><div class="wrap cta-in">
-  <div><p class="eyebrow light">MULAI CERITAMU DI RISE</p><h2>Punya rasa ingin tahu?<br />Mari bangun sesuatu.</h2><p>Belajar, berkolaborasi, dan bawa idemu lebih jauh bersama RISE CENTER.</p></div>
-  <div class="ctab"><a class="btn white" href="#kontak">Kenalan dengan tim lab ↗</a><a class="lnk" href="#karya">atau jelajahi portofolio kami ↗</a></div>
-</div></section>
-</main>
+      <section class="cta">
+        <div class="wrap cta-in">
+          <div>
+            <p class="eyebrow light">MULAI CERITAMU DI RISE</p>
+            <h2>Punya rasa ingin tahu?<br />Mari bangun sesuatu.</h2>
+            <p>
+              Belajar, berkolaborasi, dan bawa idemu lebih jauh bersama RISE
+              CENTER.
+            </p>
+          </div>
+          <div class="ctab">
+            <a class="btn white" href="#kontak">Kenalan dengan tim lab ↗</a
+            ><a class="lnk" href="#karya">atau jelajahi portofolio kami ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<footer id="kontak"><div class="wrap">
-  <div class="fgrid">
-    <div><h3>RISE CENTER</h3><p>Lab Software Engineering<br />Teknik Informatika • UIKA Bogor</p><p class="motto">BUILD YOUR SKILL, BUILD YOUR PRODUCT</p></div>
-    <div><h4>JELAJAHI LAB</h4><a href="#tentang">Tentang RISE</a><a href="#skill">Skill &amp; karier</a><a href="#tim">Struktur tim</a></div>
-    <div><h4>KARYA &amp; CERITA</h4><a href="#prestasi">Prestasi</a><a href="#karya">Portfolio</a><a href="#hidup">Galeri &amp; kehidupan lab</a></div>
-    <div><h4>KONTAK</h4><a href="mailto:berlina@uika-bogor.ac.id">berlina@uika-bogor.ac.id</a><a href="tel:+6285885884433">0858 8588 4433</a><a href="../index.html">Kembali ke beranda ↗</a></div>
-  </div>
-  <div class="fbot"><span>© RISE CENTER • Teknik Informatika UIKA Bogor</span><a href="#top">Kembali ke atas ↑</a></div>
-</div></footer>
+    <footer id="kontak">
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <h3>RISE CENTER</h3>
+            <p>Lab Software Engineering<br />Teknik Informatika • UIKA Bogor</p>
+            <p class="motto">BUILD YOUR SKILL, BUILD YOUR PRODUCT</p>
+          </div>
+          <div>
+            <h4>JELAJAHI LAB</h4>
+            <a href="#tentang">Tentang RISE</a
+            ><a href="#skill">Skill &amp; karier</a
+            ><a href="#tim">Struktur tim</a>
+          </div>
+          <div>
+            <h4>KARYA &amp; CERITA</h4>
+            <a href="#prestasi">Prestasi</a><a href="#karya">Portfolio</a
+            ><a href="#hidup">Galeri &amp; kehidupan lab</a>
+          </div>
+          <div>
+            <h4>KONTAK</h4>
+            <a href="mailto:berlina@uika-bogor.ac.id"
+              >berlina@uika-bogor.ac.id</a
+            ><a href="tel:+6285885884433">0858 8588 4433</a
+            ><a href="../index.html">Kembali ke beranda ↗</a>
+          </div>
+        </div>
+        <div class="fbot">
+          <span>© RISE CENTER • Teknik Informatika UIKA Bogor</span
+          ><a href="#top">Kembali ke atas ↑</a>
+        </div>
+      </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-<script src="../js/se.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="../js/se.js"></script>
+  </body>
 </html>
