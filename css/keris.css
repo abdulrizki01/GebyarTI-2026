@@ -948,3 +948,26 @@ footer a:hover {
     scroll-behavior: auto;
   }
 }
+
+@media (max-width: 980px) {
+  .burger {
+    display: block;
+  }
+  .top nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    padding: 20px;
+    background: var(--bg);
+    display: none;
+  }
+  .top nav.open {
+    display: flex;
+  }
+}

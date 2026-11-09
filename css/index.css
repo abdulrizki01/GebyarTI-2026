@@ -280,6 +280,312 @@ model-viewer {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.activity-carousel {
+  --activity-accent: #c99bff;
+  --activity-bg: #0f0d14;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--activity-bg);
+  color: #fff;
+}
+.activity-stage {
+  position: relative;
+}
+.activity-viewport {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  max-height: 72vh;
+  width: 100%;
+  background: #1a1722;
+}
+.activity-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  touch-action: pan-y;
+}
+.activity-slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.activity-slide > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #1a1722;
+}
+/* gradient gelap di bawah foto, supaya teks selalu terbaca */
+.activity-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(15 13 20 / 0.92) 0,
+    rgb(15 13 20 / 0.55) 32%,
+    transparent 62%
+  );
+  pointer-events: none;
+}
+.activity-copy {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: clamp(18px, 3vw, 40px) clamp(180px, 22vw, 260px)
+    clamp(18px, 3vw, 36px) clamp(20px, 4vw, 56px);
+}
+.activity-copy small {
+  color: var(--activity-accent);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.activity-copy h3 {
+  margin: 8px 0 10px;
+  font-size: clamp(22px, 4.2vw, 48px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.activity-copy a {
+  display: inline-block;
+  color: #e6d6ff;
+  font-size: 13px;
+  font-weight: 500;
+}
+.activity-copy a:hover {
+  color: #fff;
+}
+
+/* kontrol: melayang di atas foto (desktop/tablet) */
+.activity-controls {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.activity-controls > * {
+  pointer-events: auto;
+}
+.activity-counter {
+  position: absolute;
+  top: clamp(14px, 2.4vw, 28px);
+  left: clamp(20px, 4vw, 56px);
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: rgb(15 13 20 / 0.55);
+  backdrop-filter: blur(6px);
+  color: var(--activity-accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.activity-arrow,
+.activity-play {
+  position: absolute;
+  bottom: clamp(16px, 2.6vw, 32px);
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: 50%;
+  background: rgb(15 13 20 / 0.45);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+.activity-play {
+  right: clamp(16px, 3vw, 40px);
+}
+.activity-arrow[data-slide-direction="1"] {
+  right: calc(clamp(16px, 3vw, 40px) + 52px);
+}
+.activity-arrow[data-slide-direction="-1"] {
+  right: calc(clamp(16px, 3vw, 40px) + 104px);
+}
+.activity-arrow:hover,
+.activity-play:hover {
+  border-color: var(--violet);
+  background: var(--violet);
+}
+.activity-arrow:focus-visible,
+.activity-play:focus-visible,
+.activity-thumb:focus-visible {
+  outline: 3px solid rgb(201 155 255 / 0.7);
+  outline-offset: -3px;
+}
+.activity-indicators {
+  display: none; /* diganti thumbnail */
+}
+
+/* strip thumbnail */
+.activity-thumbs {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #3a3547 transparent;
+  background: #15121c;
+}
+.activity-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 16px 18px;
+  border: 0;
+  border-top: 3px solid transparent;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: background 0.25s;
+}
+.activity-thumb:hover {
+  background: rgb(255 255 255 / 0.05);
+}
+.activity-thumb[aria-current="true"] {
+  background: #221e2c;
+  border-top-color: var(--activity-accent);
+}
+.activity-thumb img {
+  flex: 0 0 auto;
+  width: 88px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #2a2635;
+  opacity: 0.7;
+  transition: opacity 0.25s;
+}
+.activity-thumb:hover img,
+.activity-thumb[aria-current="true"] img {
+  opacity: 1;
+}
+.activity-thumb span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.activity-thumb b {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.activity-thumb small {
+  display: -webkit-box;
+  overflow: hidden;
+  color: rgb(255 255 255 / 0.5);
+  font-size: 10px;
+  line-height: 1.4;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* tablet */
+@media (max-width: 1100px) {
+  .activity-thumbs {
+    grid-auto-columns: 33.333%;
+  }
+  .activity-copy {
+    padding-right: 200px;
+  }
+}
+
+/* mobile: kontrol pindah ke bawah foto, thumbnail jadi kartu vertikal */
+@media (max-width: 700px) {
+  .activity-viewport {
+    aspect-ratio: 4 / 3;
+    max-height: none;
+  }
+  .activity-slide::after {
+    background: linear-gradient(
+      to top,
+      rgb(15 13 20 / 0.92) 0,
+      rgb(15 13 20 / 0.5) 45%,
+      transparent 75%
+    );
+  }
+  .activity-copy {
+    padding: 16px;
+  }
+  .activity-copy h3 {
+    margin: 6px 0 8px;
+    font-size: clamp(20px, 6vw, 26px);
+  }
+  .activity-counter {
+    top: 12px;
+    left: 12px;
+    font-size: 11px;
+  }
+  .activity-controls {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 12px 14px;
+    pointer-events: auto;
+    border-bottom: 1px solid rgb(255 255 255 / 0.08);
+  }
+  .activity-arrow,
+  .activity-play {
+    position: static;
+    width: 38px;
+    height: 38px;
+    backdrop-filter: none;
+    background: transparent;
+  }
+  .activity-thumbs {
+    grid-auto-columns: 42%;
+  }
+  .activity-thumb {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px;
+  }
+  .activity-thumb img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+}
+@media (max-width: 420px) {
+  .activity-thumbs {
+    grid-auto-columns: 58%;
+  }
+}
+
 .lab-card {
   position: relative;
   display: flex;
@@ -631,8 +937,12 @@ footer {
     width: 100%;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
+    transition: none;
+  }
+  .activity-track {
     transition: none;
   }
   html {

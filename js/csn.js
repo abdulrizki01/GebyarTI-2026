@@ -523,7 +523,10 @@ burger.addEventListener("click", () =>
 nav
   .querySelectorAll("a")
   .forEach((a) =>
-    a.addEventListener("click", () => nav.classList.remove("open")),
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    }),
   );
 
 // bagian opsional: tampil otomatis kalau datanya diisi di CSN_CFG

@@ -19,6 +19,31 @@ main,
   min-width: 0;
 }
 
+.team .ph,
+.org-team .ph,
+.member-photo:not(.row-photo) {
+  aspect-ratio: 4 / 5;
+}
+
+.team .ph img,
+.org-team .ph img,
+.member-photo:not(.row-photo) img {
+  object-fit: contain;
+  object-position: center top;
+}
+
+.lead-photo,
+.member-photo:not(.row-photo).lead-photo {
+  height: auto;
+  aspect-ratio: 4 / 5;
+}
+
+.lead-photo img,
+.member-photo:not(.row-photo).lead-photo img {
+  object-fit: contain;
+  object-position: center top;
+}
+
 @media (max-width: 560px) {
   .top nav,
   .site-header nav {
