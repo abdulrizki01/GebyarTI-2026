@@ -606,12 +606,35 @@ blockquote small {
   right: 22px;
   font-size: 12px;
 }
-.big {
-  font-size: 90px;
-  color: #b8a778;
-  font-family: var(--f);
-  font-weight: 300;
-  margin: auto 0 16px;
+.member-photo {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background: #dfd6bb;
+}
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.photo-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #8a7a52;
+  font-size: 18px;
+  z-index: 1;
+}
+.lead-photo {
+  height: 210px;
+  margin: 12px 0 14px;
+}
+.lead-photo .photo-fallback {
+  font-size: 52px;
 }
 .lead h3 {
   font-size: 16px;
@@ -623,7 +646,7 @@ blockquote small {
 }
 .rows a {
   display: grid;
-  grid-template-columns: 36px 1fr auto;
+  grid-template-columns: 54px 1fr auto;
   gap: 16px;
   align-items: center;
   padding: 16px 0;
@@ -636,16 +659,15 @@ blockquote small {
 .rows a:hover {
   padding-left: 10px;
 }
-.rows i {
-  width: 36px;
-  height: 36px;
+.row-photo {
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: #ebe8de;
-  display: grid;
-  place-items: center;
-  font-style: normal;
-  font-size: 10px;
-  color: var(--mut);
+}
+.row-photo img + .photo-fallback,
+.row-photo img:not([hidden]) + .photo-fallback {
+  display: none;
 }
 .rows b {
   display: block;
@@ -768,7 +790,7 @@ footer {
 }
 .fgrid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
   gap: 36px;
 }
 footer h3 {

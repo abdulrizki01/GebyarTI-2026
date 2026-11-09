@@ -3,7 +3,7 @@
    Bagian mana pun yang sedang ada di kanan = pink terang, di kiri = gelap, tengah = gradasi.
    Model berputar 360°, warnanya terus berubah mengikuti area. */
 const SE3D = {
-  src: "../img/SE4.glb", // <- sesuaikan dengan nama file hasil export lu
+  src: "../img/SE4.glb", // Sesuaikan dengan nama berkas hasil ekspor
   colors: ["#1a0f4a", "#4326a0", "#a649b0", "#ff80d2"], // kiri (gelap) -> kanan (terang)
   range: 1.5, // setengah lebar area gradasi di layar (kecilkan = kontras makin tajam)
   metalness: 0.3,
